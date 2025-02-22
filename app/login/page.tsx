@@ -3,12 +3,12 @@ import { Button } from "../_components/ui/button";
 import { LogInIcon } from "lucide-react";
 import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 const LoginPage = async () => {
   const { userId } = await auth();
-  if (userId) {
-    redirect("/");
+  if (!userId) {
+    redirect("/login");
   }
 
   return (
