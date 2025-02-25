@@ -7,6 +7,7 @@ const SubscriptionPage = async () => {
   if (!userId) {
     redirect("/login");
   }
+
   return <Navbar />;
 };
 
