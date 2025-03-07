@@ -5,8 +5,8 @@ services:
     image: postgres:latest
     container_name: finance-ai-database
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: finance
+      POSTGRES_PASSWORD: 12345
       POSTGRES_DB: finance-ai
     ports:
       - "5432:5432"
