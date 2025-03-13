@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky && prisma generate"
+    "prepare": "husky && prisma generate --schema=prisma/schema.prisma"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.5",
