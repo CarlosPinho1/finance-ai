@@ -42,6 +42,4 @@ const TransactionsPage = async () => {
   );
 };
 
-// This page is only accessible to authenticated users
-// and it will redirect to the login page if the user is not authenticated
 export default TransactionsPage;
